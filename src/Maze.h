@@ -1,9 +1,9 @@
 #ifndef ASSIGNMENT_2_MAZE_H
 #define ASSIGNMENT_2_MAZE_H
+
 #include <iostream>
 #include <vector>
 #include "Stack.h"
-
 
 
 class Maze {
@@ -14,11 +14,16 @@ private:
 
 public:
     void move(int, int) const;
-    static void read_maze(std::string&);
-    void solve_maze(std::string&) const;
+
+    static void read_maze(std::string &);
+
+    void solve_maze(std::string &) const;
+
     void check_path(int, int) const;
-    static void go_back() ;
-    static void print_finished_maze(std::vector<std::string>&);
+
+    static void go_back();
+
+    static void print_finished_maze(std::vector<std::string> &);
 };
 
 

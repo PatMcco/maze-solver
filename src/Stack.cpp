@@ -1,7 +1,7 @@
 #include "Stack.h"
 
 void Stack::push(int x, int y) {
-    Node* new_node = new Node;
+    Node *new_node = new Node;
     new_node->m_x = x;
     new_node->m_y = y;
     new_node->m_next = m_top;
@@ -9,7 +9,7 @@ void Stack::push(int x, int y) {
 }
 
 void Stack::pop() {
-    Node* node = m_top;
+    Node *node = m_top;
     m_top = m_top ? m_top->m_next : nullptr;
     delete node;
 }
