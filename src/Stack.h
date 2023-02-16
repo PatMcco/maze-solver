@@ -7,15 +7,13 @@ struct Node {
         int m_x;
         int m_y;
         Node* m_next {nullptr};
-        Node* m_prev {nullptr};
 };
 public:
     Node* m_top {nullptr};
-    Node* m_bottom {nullptr};
     void push(int, int);
     void pop();
-    int get_x_coordinate() const;
-    int get_y_coordinate() const;
+    int get_x() const;
+    int get_y() const;
 };
 
 

@@ -14,10 +14,10 @@ void Stack::pop() {
     delete node;
 }
 
-int Stack::get_x_coordinate() const {
+int Stack::get_x() const {
     return m_top ? m_top->m_x : 0;
 }
 
-int Stack::get_y_coordinate() const {}() const {
+int Stack::get_y() const {
     return m_top ? m_top->m_y : 0;
 }
